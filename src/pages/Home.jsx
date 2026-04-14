@@ -6,14 +6,18 @@ import AboutSection from "../components/landing/AboutSection";
 import ContactSection from "../components/landing/ContactSection";
 import Footer from "../components/landing/Footer";
 
-const HERO_IMAGE = "https://media.base44.com/images/public/69de86d79fa0105d32efd1a6/f4b4e7c81_generated_798f7fff.png";
+/** Base única das imagens da landing; só alterar aqui para trocar o CDN/pasta. */
+const IMAGE_BASE =
+  "https://media.base44.com/images/public/69de86d79fa0105d32efd1a6";
+
+const HERO_IMAGE = `${IMAGE_BASE}/f4b4e7c81_generated_798f7fff.png`;
 
 const vehicles = [
   {
     name: "SW4",
     brand: "Toyota",
     tag: "SUV Premium",
-    image: "https://media.base44.com/images/public/69de86d79fa0105d32efd1a6/0214b657e_generated_492d5efe.png",
+    image: `${IMAGE_BASE}/0214b657e_generated_492d5efe.png`,
     description:
       "O SUV que une robustez e sofisticação. Interior luxuoso, motor potente e tecnologia de ponta para todas as aventuras.",
     power: "204 cv",
@@ -24,7 +28,7 @@ const vehicles = [
     name: "Corolla",
     brand: "Toyota",
     tag: "Sedan Executivo",
-    image: "https://media.base44.com/images/public/69de86d79fa0105d32efd1a6/db704c847_generated_03f7eafd.png",
+    image: `${IMAGE_BASE}/db704c847_generated_03f7eafd.png`,
     description:
       "O sedan mais desejado do Brasil. Elegância, economia e tecnologia híbrida em perfeita harmonia.",
     power: "184 cv",
@@ -35,7 +39,7 @@ const vehicles = [
     name: "Hilux",
     brand: "Toyota",
     tag: "Pickup de Luxo",
-    image: "https://media.base44.com/images/public/69de86d79fa0105d32efd1a6/cff624081_generated_ac60d0ee.png",
+    image: `${IMAGE_BASE}/cff624081_generated_ac60d0ee.png`,
     description:
       "Força e prestígio em uma pickup lendária. Capacidade surpreendente com acabamento de alto padrão.",
     power: "224 cv",
